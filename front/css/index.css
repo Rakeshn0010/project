@@ -198,8 +198,7 @@ a:hover{
     cursor:pointer;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.300);
     position: fixed;
-    bottom:60px;
-    top:200px;
+    top:800px;
 }
 
 .cart-dis{
