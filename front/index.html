@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+    <head>
+        <title>Zen Mart</title>
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/index.css">
+    </head>
+    <body>
+        <header class="container-fluid">
+            <div class="top row">
+                <div class="logo col-12 col-sm-12 col-md-4">ZenMart</div>
+                <div class="search-bar col-8 col-sm-8 col-md-5"><input id="search-box" type="text" placeholder="Search"></div>
+                <div class="top-menu col-4 col-sm-4 col-md-3 container">
+                    <div class="row">
+                        <div class="to-cart col-6"><div class="cart-btn" id="cart-btn"><div>Cart</div></div></div>
+                        <div class="menu col-6">
+                            <div class="menu-btn" id="menu-btn">
+                                <div>Menu</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="drop-menu" id="drop-menu">
+            <div class="order-d-btn" id="order-d-btn">orders</div>
+            <div class="about-btn"><a href="#foot">about</a></div>
+            <div class="login-btn" id="login-btn">Login</div>
+        </div>
+        
+        <div class="login-dis" id="login-dis">
+            <div class="login-back-btn" id="login-back-btn">back</div>
+            <div class="register-dis" id="register-dis">
+                    <div class="reg-title">Register</div>
+                    <div class="r-info-box">
+                        <input type="text" placeholder="username" id="r-username">
+                        <input type="text" placeholder="create-password" id="r-create-pass">
+                        <input type="text" placeholder="reenter-password" id="r-re-pass">
+                    </div>
+                    <div class="to-signin" id="to-signin">alrady have a account?</div>
+                    <div class="regiser-btn"><button class="reg-btn" id="reg-btn">Register</button></div>
+            </div>
+            <div class="signin-dis" id="signin-dis">
+                <div class="signin-title">Login</div>
+                <div class="s-info-box">
+                    <input type="text" placeholder="username" id="s-username">
+                    <input type="text" placeholder="password" id="s-password">
+                </div>
+                <div class="to-reg" id="to-reg">register?</div>
+                <div class="sign-in-btn" id="sign-in-btn">Login</div>
+            </div>
+        </div>
+        <div class="addver-dis" id="addver-dis"></div>
+        
+        <div class="cart-dis" id="cart-dis">No Products added to Cart</div>
+
+        <div class="one-product-dis" id="one-product-dis"></div>
+
+        <div class="order-dis" id="order-dis">No orders placed</div>
+        
+        <div class="product-dis container-fluid" id="product-dis"></div>
+
+        <footer id="foot">
+            <div class="myname">Name :Rakesh N</div>
+            <div class="myemail">Email :rakeshn0010@gmail.com</div>
+            <div class="sourcecode"><a href="">source code</a></div>
+        </footer>
+    </body>
+    <script type="module" src="./js/index.js"></script>
+</html>
