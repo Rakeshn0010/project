@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+    <head>
+        <title>
+            ZenKart
+        </title>
+        <link rel="icon" type="image/png" href="./images/logo.png">
+        <link rel="stylesheet" href="./css/index.css">
+        <link rel="stylesheet" href="./css/buttons.css">
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+    </head>
+    <body>
+        
+        <div class="main-dis">
+            <div class="top-bar container-fluid" id="top-bar">
+                <div class="row">
+                    <div class="logo col-12 col-sm-12 col-md-4 col-lg-4">ZenKart</div>
+                    <div class="search-box col-10 col-sm-10 col-md-6 col-lg-6">
+                        <input type="text" placeholder="Search" id="search-for-pro">
+                    </div>
+                    <div class="menu col-1 col-sm-1 col-md-1 col-lg-1">
+                        <div class="menu-btn" id="menu-btn"><div></div><div></div><div></div></div>
+                        <div class="menu-drop" id="menu-drop">
+                            <div><a href="#category-dis" class="category-btn" id="category-btn">Categories</a></div>
+                            <div><a href="#cart-dis" class="cart-btn" id="cart-btn">Cart</a></div>
+                            <div><a href="#order-dis" class="order-btn" id="order-btn">Orders</a></div>
+                            <div><a href="#footer" class="about-btn" id="about-btn">About</a></div>
+                            <div><div class="login-pop-btn" id="login-pop-btn">Login</div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="one-pro-dis container-fluid">
+                <div class="row" id="one-pro-dis-inner">
+                    <div class="col-2 col-sm-2 col-md-3 col-lg-3"><div class="left-click" id="left-click" onclick="leftclickbtnfunc()">&lt;</div></div>
+                    <div class="col-8 col-sm-8 col-md-6 col-lg-6"><div class="one-pro" id="one-pro"></div></div>
+                    <div class="col-2 col-sm-2 col-md-3 col-lg-3"><div class="right-click" id="right-click" onclick="rightclickbtnfunc()">&gt;</div></div>
+                </div>
+            </div>
+        </div>
+        <div class="all-pro-dis" id="all-pro-dis"></div>
+        
+        <div class="category-dis" id="category-dis"></div>
+        
+        <div class="cart-name " id="cart-name">Cart<span class="cart-oc" id="cart-oc">+</span></div>
+        <div class="cart-dis" id="cart-dis">No products in cart</div>
+        
+        <div class="order-name" id="order-name">Orders<span class="order-oc" id="order-oc">+</span></div>
+        <div class="order-dis" id="order-dis">No orders placed</div>
+        
+        <div class="footer container-fluid" id="footer">
+            <div class="row">
+                <div class="col-12"><div class="foothead">About</div></div>
+                <div class="col-12"><div>Name : Rakesh N</div></div>
+                <div class="col-12"><div>Email : rakeshn0010@gmail.com</div></div>
+                <div class="col-12"><div>Source-Code : <a href="">click to getcode</a></div></div>
+            </div>
+        </div>
+
+        <div class="login-reg-dis" id="login-reg-dis">
+            <div class="login-back-btn" id="login-back-btn">back</div>
+            <div class="register-dis" id="register-dis">
+                <div class="reg-title">Register</div>
+                <div class="r-info-box">
+                    <input type="text" placeholder="username" id="r-username">
+                    <input type="text" placeholder="create-password" id="r-create-pass">
+                    <input type="text" placeholder="reenter-password" id="r-re-pass">                    
+                </div>
+                <div class="to-signin" id="to-signin">alrady have a account?</div>
+                <div class="regiser-btn"><button class="reg-btn" id="reg-btn">Register</button></div>
+            </div>
+            <div class="signin-dis" id="signin-dis">
+                <div class="signin-title">Login</div>
+                <div class="s-info-box">
+                    <input type="text" placeholder="username" id="s-username">
+                    <input type="text" placeholder="password" id="s-password">
+                </div>
+                <div class="to-reg" id="to-reg">register?</div>
+                <div class="sign-in-btn" id="sign-in-btn">Login</div>
+            </div>
+        </div>
+        
+        <div class="message-box" id="message-box">No messages to display</div>
+        
+        <div class="goto-icons">
+            <div class="product-icon" id="product-icon"><img src="./images/Product.png"></div><br>
+            <div class="cart-icon" id="cart-icon"><img src="./images/cart.png"></div><br>
+            <div class="order-icon" id="order-icon"><img src="./images/Order.png"></div><br>
+            <div class="goup-icon" id="goup-icon"><img src="./images/uparrow.png"></div>
+        </div>
+
+        <div class="texttoappear">
+            <div class="pro-text" id="pro-text">Products</div>
+            <div class="cart-text" id="cart-text">Cart</div>
+            <div class="order-text" id="order-text">Orders</div>
+        </div>
+
+
+        <script type="module" src="./js/index.js" defer></script>   
+        <script type="module" src="./js/product.js" defer></script>   
+    </body>
+
+</html>
